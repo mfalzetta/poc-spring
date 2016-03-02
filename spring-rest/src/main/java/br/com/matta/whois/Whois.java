@@ -9,6 +9,6 @@ public class Whois {
 
 	@RequestMapping("/whoisfake")
     public String getAsNumber(@RequestParam(value="ip", defaultValue="201.69.33.209") String name) {
-        return "AS | IP               | AS Name\n27699   | 201.69.33.209    | Telefônica Brasil S.A,BR";
+        return "AS | IP               | AS Name\n27699   | " + name + "    | Telefônica Brasil S.A,BR";
     }
 }
